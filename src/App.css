@@ -1,0 +1,84 @@
+.Card {
+  width: 330px;
+  margin: 80px auto;
+  padding: 30px 24px;
+  background: linear-gradient(to bottom right, #f9f9f9, #ffffff);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.3s ease;
+    opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Card h1 {
+  font-size: 24px;
+  color: #24292e;
+  margin-bottom: 24px;
+}
+
+.Card input {
+  width: 100%;
+  padding: 10px 1px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.Card input:focus {
+  border-color: #0366d6;
+}
+
+.btn {
+  background-color: #0366d6;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #024eae;
+}
+
+.profile-card {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  box-shadow: 0 4px 15px rgba(255, 150, 50, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  margin: 20px auto;
+  color: #1e1e1e;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 140, 0, 0.6);
+}
+
+.username {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.repo-count {
+  font-size: 16px;
+  color: #333;
+}
